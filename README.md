@@ -8,7 +8,6 @@ Ce projet a pour but de déployer un cluster Kubernetes **hautement disponible (
 * **Keepalived** (IP virtuelle haute disponibilité)
 * **MetalLB** (LoadBalancer local)
 * **Longhorn** (stockage distribué)
-* **Prometheus + Grafana** (supervision)
 
 Chaque équipe dispose de plusieurs **Control Planes (CP)** et de **workers**, configurés avec des IP virtuelles distinctes pour assurer la redondance et la tolérance de panne.
 Pour des raisons de clarté seul les fichiers de config et IPs de l'équipe 1 seront utilisés.
@@ -25,7 +24,6 @@ Pour des raisons de clarté seul les fichiers de config et IPs de l'équipe 1 se
 * **K3s** fournit le plan de contrôle et l’orchestration des conteneurs.
 * **MetalLB** attribue des IP locales aux services LoadBalancer.
 * **Longhorn** gère le stockage persistant sur les nœuds workers.
-* **Prometheus / Grafana** collectent et affichent les métriques du cluster.
 
 ---
 
@@ -99,8 +97,6 @@ kubectl get namespace "longhorn-system" -o json   | tr -d "\n" | sed "s/\"finali
 | **Keepalived** | IP virtuelle HA entre les CP   |
 | **MetalLB**    | LoadBalancer local             |
 | **Longhorn**   | Stockage distribué persistant  |
-| **Prometheus** | Supervision du cluster         |
-| **Grafana**    | Visualisation des métriques    |
 
 ---
 
