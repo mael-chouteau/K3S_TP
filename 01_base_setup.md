@@ -6,7 +6,7 @@ les hostnames doivent être en minuscule dans ce style : (cp1, w35, W923, cp4)
 
 ---
 
-## 🖥️ 1. Configuration du fichier hosts
+## 1. Configuration du fichier hosts
 
 Ajoute la correspondance des noms de machines :
 
