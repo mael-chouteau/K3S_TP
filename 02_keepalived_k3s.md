@@ -157,6 +157,11 @@ Vérifie que les nœuds rejoignent le cluster :
 sudo k3s kubectl get nodes -o wide
 ```
 
+on va tainter les cp pour eviter que les pods se déploient dessus :
+```bash
+kubectl taint nodes cp1 node-role.kubernetes.io/control-plane=:NoSchedule
+```
+
 ---
 ## 7. Installation des workers
 
