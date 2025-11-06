@@ -101,7 +101,7 @@ kubectl replace --raw /api/v1/namespaces/longhorn-system/finalize -f -
 
 ## 6. Déploiement de Longhorn
 
-Créer un fichier de configuration **`longhorn.yaml`** .
+Créer un fichier de configuration [**`longhorn.yaml`**](https://github.com/mael-chouteau/K3S_TP/blob/main/longhorn_values.yaml) .
 
 Installer Longhorn via Helm :
 
