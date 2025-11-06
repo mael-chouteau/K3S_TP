@@ -5,6 +5,10 @@ Ces étapes préparent le système à l’installation de **K3s** et des composa
 les hostnames doivent être en minuscule dans ce style : (cp1, w35, W923, cp4)
 
 ---
+**Changez et notez votre MDP de VM.**
+```bash
+passwd
+```
 
 ## 1. Configuration du fichier hosts
 
