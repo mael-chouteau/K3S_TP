@@ -1,0 +1,29 @@
+defaultSettings:
+  # Crée automatiquement des disques Longhorn seulement sur les nœuds labellisés
+  createDefaultDiskLabeledNodesOnly: true
+
+# Empêche les pods Longhorn de se déployer sur les control-plane
+longhornManager:
+  nodeSelector:
+    node-role.kubernetes.io/worker: "true"
+
+longhornDriver:
+  nodeSelector:
+    node-role.kubernetes.io/worker: "true"
+
+longhornUI:
+  nodeSelector:
+    node-role.kubernetes.io/worker: "true"
+
+csi:
+  attacherNodeSelector:
+    node-role.kubernetes.io/worker: "true"
+  provisionerNodeSelector:
+    node-role.kubernetes.io/worker: "true"
+  resizerNodeSelector:
+    node-role.kubernetes.io/worker: "true"
+  snapshotterNodeSelector:
+    node-role.kubernetes.io/worker: "true"
+service:
+  ui:
+    type: LoadBalancer
