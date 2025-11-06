@@ -31,6 +31,8 @@ Pour des raisons de clarté seul les fichiers de config et IPs de l'équipe 1 se
 
 Les étapes détaillées sont réparties dans plusieurs sous-guides pour plus de clarté :
 
+**[Bonus](https://github.com/mael-chouteau/K3S_TP/blob/main/Bonus.md)**
+
 1. **[01_base_setup.md](./01_base_setup.md)**
    Configuration de base commune à tous les nœuds :
 
