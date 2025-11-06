@@ -64,11 +64,12 @@ Les étapes détaillées sont réparties dans plusieurs sous-guides pour plus de
    * Configuration du répertoire de stockage
    * Installation de Longhorn via Helm
 
-5. **[05_monitoring.md](./05_monitoring.md)**
-   Mise en place de Prometheus (et Grafana) :
+5. **[05_juice-shop.md](./05_juice-shop.md)**
+   Mise en place de juice-shop :
 
-   * Déploiement via manifeste `prometheus.yaml`
-   * Vérification de la collecte des métriques
+   * Création d'un service web
+   * Utilisation du loadbalancer
+   * Presistance des données avec longhorn
 
 ---
 
